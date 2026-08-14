@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Soal | Elektro Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="../assets/css/banksoal.css">
+    <style>
+    #hiddenContent {
+        display: none;
+    }
+    </style>
+  </head>
+<body>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Elektro Education</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../bukubelajar.html">Buku Belajar</a></li>
+        <li><a href="../banksoal.html">Bank Soal</a></li>
+        <li><a href="../labmaya.html">Lab Maya</a></li>
+        <li><a href="../tentang.html">Tentang</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner2"></div>
+<br><br>
+
+<div class="center">
+    <div class="featured-games header-text" style="background-color: transparent;">
+        <h2>Latihan Soal Penilaian Akhir Semester Bahasa Indonesia Kelas 10</h2><br>
+        <div class="soal">
+            <iframe src="PDF/Kumpulan Soal Bahasa Indonesia Kelas 10 Semester 1.pdf" width="800" height="600" allow="autoplay"></iframe>
+        </div>
+        <br>
+        <div>
+        <button class="jawaban" onclick="toggleContent()">Lihat Jawaban</button></div>
+        <br><br>
+        <div id="hiddenContent">
+        <iframe src="PDF/Kunci Jawaban Kumpulan Soal Bahasa Indonesia Kelas 10 Semester 1.pdf" width="800" height="600" allow="autoplay"></iframe>
+        </div>
+    </div>
+</div>
+
+
+   
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/popup.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/banksoal.js"></script>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  <script>
+        function toggleContent() {
+            var hiddenContent = document.getElementById("hiddenContent");
+            if (hiddenContent.style.display === "block") {
+                hiddenContent.style.display = "none";
+            } else {
+                hiddenContent.style.display = "block";
+                hiddenContent.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>

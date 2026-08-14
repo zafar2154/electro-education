@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Buku Belajar | Electro Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/bukubelajar.css">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo2.png" alt="">
+                            <img src="assets/images/logo1.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="bukubelajar.html" class="active">Buku Belajar</a></li>
+                            <li><a href="banksoal.html">Bank Soal</a></li>
+                            <li><a href="labmaya.html">Lab Maya</a></li>
+                            <li><a href="coba.html">Tentang</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <div class="container">
+        <div class="page-content">
+            <div class="row">
+                <div class="featured-games header-text">
+                    <form class="filter">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div style="width: 100%">
+                                    <div class="item cari">
+                                        <label></label>
+                                        <input name="name" type="text" placeholder="Cari Buku Disini">
+                                        <div class="item submit" style="width:30%" style="background-color: purple;">
+                                            <button>Cari</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3" style="margin-top: 10px;">
+                                    <div class="item fil">
+                                        <label>Kelas</label>
+                                        <select name="kelas">
+                                        <option value="">Semua</option>
+                                        <option value="satu">I</option>
+                                        <option value="dua">II</option>
+                                        <option value="tiga">III</option>
+                                        <option value="empat">IV</option>
+                                        <option value="lima">V</option>
+                                        <option value="enam">VI</option>
+                                        <option value="tujuh">VII</option>
+                                        <option value="delapan">VIII</option>
+                                        <option value="sembilan">IX</option>
+                                        <option value="sepuluh">X</option>
+                                        <option value="sebelas">XI</option>
+                                        <option value="duabelas">XII</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4" style="margin-top: 10px;">
+                                    <div class="item fil">
+                                        <label>Jenjang</label>
+                                        <select name="jenjang">
+                                        <option value="">Semua</option>
+                                        <option value="sd">SD/MI</option>
+                                        <option value="smp">SMP/MTS</option>
+                                        <option value="sma">SMA/MA/SMK/MAK</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5" style="margin-top: 10px;">
+                                    <div class="item fil">
+                                        <label>Mata Pelajaran</label>
+                                        <select name="pelajaran">
+                                        <option value="">Semua</option>
+                                        <option value="tema">Tema</option>
+                                        <option value="ipa">IPA</option>
+                                        <option value="ips">IPS</option>
+                                        <option value="indonesia">Bahasa Indonesia</option>
+                                        <option value="inggris">Bahasa Inggris</option>
+                                        <option value="matematika">Matematika</option>
+                                        <option value="pkn">Pendidikan Kewarganegaraan</option>
+                                        <option value="pjok">PJOK</option>
+                                        <option value="prakarya">Prakarya</option>
+                                        <option value="islam">Pendidikan Agama Islam</option>
+                                        <option value="kristen">Pendidikan Agama Kristen</option>
+                                        <option value="katolik">Pendidikan Agama Katolik</option>
+                                        <option value="hindu">Pendidikan Agama Hindu</option>
+                                        <option value="buddha">Pendidikan Agama Buddha</option>
+                                        <option value="khonghucu">Pendidikan Agama Khonghucu</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="countResults">Menemukan <b id="count"></b> Buku </div>
+                    <div id="list"></div>
+                    <div class="pagination" id="pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bukubelajar.js"></script>
+
+</body>
+
+</html>
