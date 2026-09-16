@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  --color-chalkboard-light: #355c4a;
+  --color-chalkboard: #1f3d2e;
+  --color-chalkboard-dark: #142820;
+  --color-chalk: #f5f3e7;
+  --color-chalk-yellow: #f2c94c;
+  --color-paper: #fbf9f2;
+  --color-ink: #24291f;
+  --color-ink-soft: #55594e;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Garis putus-putus ala buku tulis, dipakai di bawah judul kartu/section */
+.rule-dashed {
+  border-bottom: 1.5px dashed
+    color-mix(in srgb, var(--color-ink) 25%, transparent);
+}
